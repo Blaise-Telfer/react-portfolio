@@ -1,0 +1,585 @@
+/*universal css*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	height: 100%;
+	outline: none;
+	scroll-behavior: smooth;
+}
+.header-color{
+	background: linear-gradient(to right, #000, #3185ff);
+	font-family: 'Arvo', sans-serif;
+}
+.header-color a:hover{
+	background: #012965;
+}
+.header-color .nav{
+	font-size: 20px;
+}
+
+.drawer{
+	background: #e3e3e3 !important;
+	font-family: 'Arvo', sans-serif;
+	color: #333 !important;
+	font-size: 24px !important;
+	padding: 15px !important;
+}
+.mdl-layout-title{
+	font-size: 24px !important;
+	font-family: 'Arvo', sans-serif !important;
+	margin: 15px 0;
+	padding: 0 0 0 15px !important;
+}
+.drawer hr{
+	width: 90%;
+	margin: 0 auto;
+	height: 5px; 
+	background: #333;
+}
+
+
+.material-icons{
+	color: #fff;
+	font-size: 40px !important;
+}
+
+
+/*home page css*/
+.landing-grid{
+	background: #2a70d6;
+	text-align: center;
+	width: 100%;
+	min-height: 100%;
+}
+
+.top-display{
+	position: relative;
+	display: flex;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+}
+.top-display .av-img{
+	height: 100%;
+	width: 250px;
+}
+.info{
+	width: 60%;
+	text-align: left;
+}
+.name{
+	padding: 40px 30px 0 40px;
+}
+.name h1{
+	font-family: 'Exo', sans-serif;
+	margin: 0;
+	font-size: 64px;
+	color: #012965;
+}
+.name h2{
+	font-family: 'Teko', sans-serif;
+	font-size: 30px;
+	margin: 0;
+	line-height: 1.5;
+	color: #000;
+}
+
+.btn-display{
+	display: flex;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	margin-top: 20px;
+	padding: 0 0 0 40px;
+}
+.btn-display i{
+	color: #53ecfe;
+	font-size: 30px;
+}
+.contact-btn {
+	text-decoration: none;
+	color: #53ecfe;
+	border: #53ecfe solid 2px;
+	border-radius: 30px;
+	padding: 10px;
+}
+.contact-btn:hover{
+	color: #fff;
+	border: #fff solid 2px;
+	text-decoration: none;
+}
+.btn-display i:hover{
+	color: #fff;
+}
+
+.icons{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	display: flex;
+	flex-direction: column;
+}
+.icons i{
+	font-size: 40px;
+	padding: 15px;
+	margin: 5px 0;
+	color: #fff;
+	background: #000;
+	border-radius: 50%;
+}
+.icons i:hover{
+	color: #000;
+	background: #fff;
+}
+
+.banner-text{
+	background: #000;
+	opacity: .8;
+	width: 75%;
+	margin: 30px auto;
+	border-radius: 10px;
+	
+}
+.banner-text h1{
+	color: #53ecfe;
+	font-family: 'Exo', serif;
+	font-size: 64px;
+	font-weight: bold;
+	margin: 0;
+	padding: 25px;
+}
+.banner-text hr{
+	border-top: 5px dotted #fff;
+	width: 50%;
+	margin: auto;
+	padding: 15px;
+}
+.banner-text p{
+	font-size: 30px;
+	padding: 0 0 30px 0;
+	color: #fff;
+	font-family: 'Teko', sans-serif;
+	font-weight: bold;
+}
+
+/*portfolio button*/
+.test{
+	display: flex;
+	justify-content: center;
+	margin: 40px 0;
+}
+.gallery-tab{
+	margin: 0 30px;
+	text-decoration: none;
+	border: #000 solid 2px;
+	background: #000;
+	border-radius: 30px;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #53ecfe;
+	padding: 10px;
+}
+.gallery-tab:hover{
+	color: #000;
+	background: #53ecfe;
+	border: #53ecfe solid 2px;
+	text-decoration: none;
+}
+
+/*landing page projects*/
+.landing-display{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px 0 75px 0;
+}
+.landing-display .mdl-card{
+	position: relative;
+	margin: 10px auto;
+	width: 250px;
+	height: 200px;
+	background: #012965;
+	word-break: break-word;
+	color: #000;
+}
+.container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+}
+.landing-display h2{
+	font-size: 18px;
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	margin: auto;
+	color: #fff;
+}
+.buttons{
+	position: absolute;
+	left: 0;
+	bottom: 15%;
+	z-index: 0;
+	width: 100%;
+	opacity: 0;
+}
+.buttons a{
+	color: #fff;
+	border: #fff solid 2px;
+	border-radius: 30px;
+	background: rgba(255,255,255,0.5);
+	padding: 5px 10px;
+	margin: 0 5px;
+	font-size: 15px;
+	font-family: 'Cinzel', serif;
+	text-decoration: none;
+}
+.landing-display .image-box{
+	position: relative;
+	height: 160px;
+	margin-top: auto;
+}
+.landing-display img{
+	height: 100%;
+	width: 100%;
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	opacity: 0;
+	transition: all 500ms;
+}
+.mdl-card:hover .container, 
+.mdl-card:hover .overlay,
+.mdl-card:hover .buttons{
+	opacity: 1;
+}
+
+
+/*toggle function*/
+.landing-display .toggle, .projects-grid .toggle{
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.landing-display p{
+	color: #e3e3e3;
+	font-family: 'Exo', sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	background: #000;
+	z-index: 1;
+}
+#backdrop:after{
+	content: "\25bc";
+	color: #fff;
+}
+#backdrop2:after{
+	content: "\25b2";
+	color: #fff;
+}
+
+
+/*projects page css*/
+.mdl-tabs__tab-bar{
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 40px;
+}
+.projects-grid{
+	display: flex;
+	margin-top: 40px;
+	text-align: center;
+}
+.projects-grid .mdl-card{
+	position: relative;
+	margin: auto;
+	width: 270px;
+	height: 200px;
+	background: #012965;
+	word-break: break-word;
+	color: #000;
+}
+.projects-grid h2{
+	font-size: 15px;
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	margin: auto;
+	color: #fff;
+}
+.projects-grid .image-box{
+	position: relative;
+	height: 160px;
+	margin-top: auto;
+}
+.projects-grid img{
+	height: 100%;
+	width: 100%;
+}
+.projects-grid p{
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	background: #000;
+	z-index: 1;
+}
+
+
+/*contact page css*/
+.contact-body{
+	margin: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	padding: 10% 0 0 0;
+}
+.mdl-layout__inner-container{
+	background: #2a70d6;
+}
+.contact-grid{
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	height: auto;
+	background: #012965;
+	opacity: .9;
+	color: #fff;
+}
+.contact-grid .about{
+	font-family: 'Exo', sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+.av-img{
+	height: auto;
+	width: 300px;
+	padding-top: 1em;
+	opacity: 0;
+}
+.contact-grid .about p{
+	padding: 20px 0;;
+}
+.contact-grid .contact-info{
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+.contact-container{
+	width: 75%;
+	margin: auto;
+}
+.contact-info h2{
+	font-family: 'Exo', serif;
+}
+.contact-info hr{
+	border-top: 5px dotted #fff;
+	margin: auto;
+}
+.numbers{
+	margin: 20px auto;
+}
+.numbers a{
+	color: #fff;
+	text-decoration: none;
+}
+.numbers a i:hover{
+	color: #000;
+}
+.numbers i{
+	font-size: 40px;
+}
+.numbers p{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	margin: 10px 0;
+}
+
+/*media queries*/
+@media(max-width: 1000px){
+	.projects-grid .mdl-card{
+		height: auto;
+		width: 250px;
+	}
+	.contact-grid .about p{
+		line-height: 1.5;
+	}
+	.contact-grid .contact-info h2{
+		font-size: 40px;
+	}
+}
+@media(max-width: 844px){
+	.contact-grid .about{
+		width: 90%;
+		margin: 0;
+	}
+	.contact-grid .contact-info{
+		width: 90%;
+	}
+	.contact-info h2{
+		display: none;
+	}
+	.contact-info hr{
+		display: none;
+	}
+	.mdl-list{
+		margin: 0;
+		text-align: center;
+	}
+	.mdl-list__item-primary-content{
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+}
+@media(max-width: 810px){
+	.name{
+		padding: 40px 40px 0 10px;
+	}
+	.name h1{
+		font-size: 50px;
+	}
+	.name h2{
+		font-size: 24px;
+	}
+	.btn-display{
+		padding: 0;
+		text-align: center;
+	}
+	.icons{
+		right: 2%;
+		top: 2%;
+	}
+	.projects-grid .mdl-card{
+		height: auto;
+		width: 200px;
+	}
+	.contact-grid .about p{
+		line-height: 1;
+	}
+}
+
+@media(max-width: 700px){
+	.top-display{
+		flex-direction: column;
+	}
+	.top-display .av-img{
+		margin: auto;
+	}
+	.info{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.name, .btn-display{
+		position: static;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+	.contact-btn{
+		margin: 10px;
+	}
+	.info h2{
+		padding: 0;
+	}
+	.icons{
+		position: static;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.icons i{
+		margin: 0 5px;
+		padding: 15px;
+	}
+	.button a{
+		line-height: .5;
+	}
+	.banner-text p{
+		padding: 0 10px 30px 10px;
+	}
+}
+
+@media(max-width: 650px){
+	.projects-grid{
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.projects-grid .mdl-card{
+		height: auto;
+		width: 300px;
+		margin: 10px 0;
+	}
+	.mdl-tabs{
+		margin: 5% 0 0 0;
+	}
+}
+@media(max-width: 570px){
+	
+	.landing-display{
+		flex-direction: column;
+	}
+	.landing-display .mdl-card{
+		width: 300px;
+	}
+	.contact-grid .about{
+		height: auto;
+	}
+	
+}
+@media(max-width: 520px){
+	.contact-grid .av-img{
+		width: 200px;
+	}
+	.contact-grid .about p{
+		line-height: 1.2;
+	}
+	.numbers i{
+		font-size: 30px;
+	}
+	.numbers p{
+		font-size: 18px;
+	}
+	.mdl-tabs{
+		margin: 10% 0 0 0;
+	}
+}
+@media(max-width: 500px){
+	.button a{
+		font-size: 10px;
+	}
+	.banner-text h1{
+		font-size: 50px;
+	}
+	.mdl-tabs .tab-text{
+		line-height: 1.5em;
+		padding: 0 10px;
+	}
+}
+@media(max-width: 414px){
+	.banner-text h1{
+		font-size: 45px;
+	}
+	.contact-grid .about p{
+		font-size: 12px;
+	}
+	.social-links a{
+		padding: 5px;
+	}
+	.contact-body{
+		padding: 20% 0 0 0;
+	}
+}
