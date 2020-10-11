@@ -74,9 +74,9 @@ class Landing extends Component{
 						</Tween>
 						
 						<div className="banner-text">
-							<h1>Web Developer</h1>
+							<h1>Title</h1>
 							<hr/>
-							<p>HTML | CSS | Javascript | React | NodeJS | Express</p>
+							<p>skill | skill | skill | skill | skill | skill</p>
 						</div>
 						
 						<div class="test">
@@ -87,7 +87,7 @@ class Landing extends Component{
 							<div className="landing-display" id="bottom">
 							
 								<Card shadow={5} style={{minWidth:'450'}}>
-									<h2>Landing Pages</h2>
+									<h2>Category</h2>
 									<div class="image-box">
 										<div class="overlay"></div>
 										<img src={projectCard} />
@@ -103,7 +103,7 @@ class Landing extends Component{
 								</Card>
 								
 								<Card shadow={5} style={{minWidth:'450'}}>
-									<h2>Websites</h2>
+									<h2>Category</h2>
 									<div class="image-box">
 										<div class="overlay"></div>
 										<img src={projectCard} />
@@ -119,7 +119,7 @@ class Landing extends Component{
 								</Card>
 								
 								<Card shadow={5} style={{minWidth:'450'}}>
-									<h2>Apps</h2>
+									<h2>Category</h2>
 									<div class="image-box">
 										<div class="overlay"></div>
 										<img src={projectCard} />
